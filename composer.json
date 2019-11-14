@@ -93,6 +93,9 @@
     "scheb/two-factor-bundle": "^3.8",
     "phpoffice/phpspreadsheet": "^1.9"
   },
+  "conflict": {
+    "monolog/monolog": ">=2"
+  },
   "require-dev": {
     "cache/integration-tests": "^0.16.0",
     "codeception/codeception": "~2.4.5",
@@ -158,5 +161,7 @@
       "dev-master": "6.3-dev"
     }
   },
-  "bin": ["bin/pimcore-install"]
+  "bin": [
+    "bin/pimcore-install"
+  ]
 }
