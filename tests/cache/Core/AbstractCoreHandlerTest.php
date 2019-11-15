@@ -49,7 +49,7 @@ abstract class AbstractCoreHandlerTest extends TestCase
     /**
      * @inheritDoc
      */
-    protected function setUp(): void
+    protected function setUp(): void            // see https://github.com/sebastianbergmann/phpunit/issues/3288
     {
         $this->cache = $this->createCachePool();
         $this->cache->setLogger(static::$logger);
