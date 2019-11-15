@@ -38,10 +38,17 @@ matrix:
       env:
         - SYMFONY_VERSION="^4.0"
 
-    - name: "All Tests - PHP 7.3 Symfony 3.4"
+    - name: "All Tests - PHP 7.3 Symfony 4"
       os: linux
       sudo: required
       php: 7.3
+      env:
+        - SYMFONY_VERSION="^4.0"
+
+    - name: "All Tests - PHP 7.4 Symfony 4"
+      os: linux
+      sudo: required
+      php: 7.4
       env:
         - SYMFONY_VERSION="^4.0"
 
