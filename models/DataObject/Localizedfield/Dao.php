@@ -685,6 +685,12 @@ QUERY;
         $table = $this->getTableName();
 
         $context = $this->model->getContext();
+
+        $x = [1,2,3];
+        codecept_debug(var_export($x, true));
+        $y = [...$x];
+        codecept_debug(var_export($y, true));
+
         if ($context && isset($context['containerType']) && ($context['containerType'] == 'fieldcollection' || $context['containerType'] == 'objectbrick')) {
             $this->db->query(
                 'CREATE TABLE IF NOT EXISTS `'.$table."` (
