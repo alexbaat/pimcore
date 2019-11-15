@@ -5,14 +5,6 @@ use Pimcore\Tests\Util\Autoloader;
 \Pimcore\Bootstrap::setProjectRoot();
 \Pimcore\Bootstrap::bootstrap();
 
-$x = [1, 2, 3];
-codecept_debug(var_export($x, true));
-$y = [...$x];
-codecept_debug(var_export($y, true));
-
-die("TEST");
-
-
 Autoloader::addNamespace('Pimcore\Model\DataObject', __DIR__ . '/_output/var/classes/DataObject');
 Autoloader::addNamespace('Pimcore\Tests\Cache', __DIR__ . '/cache');
 Autoloader::addNamespace('Pimcore\Tests\Ecommerce', __DIR__ . '/ecommerce');
