@@ -685,6 +685,7 @@ QUERY;
         $table = $this->getTableName();
 
         $context = $this->model->getContext();
+        codecept_debug(var_export($context, true));
         if ($context && $context['containerType'] == 'fieldcollection' || $context['containerType'] == 'objectbrick') {
             $this->db->query(
                 'CREATE TABLE IF NOT EXISTS `'.$table."` (
@@ -710,6 +711,7 @@ QUERY;
             ) DEFAULT CHARSET=utf8mb4;"
             );
         }
+        codecept_debug("done");
 
         $this->handleEncryption($this->model->getClass(), [$table]);
 
