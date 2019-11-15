@@ -53,7 +53,7 @@ matrix:
       env:
           - PIMCORE_TEST_SUITE=rest
           - PIMCORE_TEST_ENV=http
-
+ 
     - name: "REST Tests - PHP 7.3 Symfony 3.4"
       os: linux
       sudo: required
