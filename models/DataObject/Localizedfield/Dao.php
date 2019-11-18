@@ -711,7 +711,6 @@ QUERY;
             ) DEFAULT CHARSET=utf8mb4;"
             );
         }
-        codecept_debug("done");
 
         $this->handleEncryption($this->model->getClass(), [$table]);
 
