@@ -20,10 +20,17 @@ addons:
 matrix:
   include:
     # Symfony 3.4 all tests
-    - name: "All Tests - PHP 7.2 Symfony 3.4"
+    - name: "All Tests - PHP 7.4 Symfony 3.4"
       os: linux
       sudo: required
       php: "7.4snapshot"
+
+    - name: "All Tests - PHP 7.3 Symfony 3.4"
+      os: linux
+      sudo: required
+      php: "7.3"
+
+
 #
 #    - name: "All Tests - PHP 7.3 Symfony 3.4"
 #      os: linux
