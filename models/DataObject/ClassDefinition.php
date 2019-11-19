@@ -148,6 +148,11 @@ class ClassDefinition extends Model\AbstractModel
     public $showAppLoggerTab = false;
 
     /**
+     * @var bool
+     */
+    public $enableLocking = false;
+
+    /**
      * @var string
      */
     public $linkGeneratorReference;
@@ -1324,4 +1329,22 @@ class ClassDefinition extends Model\AbstractModel
         $definitionModifier = new DefinitionModifier();
         $definitionModifier->removeField($layoutComponent, $fieldNameToRemove);
     }
+
+    /**
+     * @return bool
+     */
+    public function getEnableLocking(): bool
+    {
+        return $this->enableLocking;
+    }
+
+    /**
+     * @param bool $enableLocking
+     */
+    public function setEnableLocking(bool $enableLocking): void
+    {
+        $this->enableLocking = $enableLocking;
+    }
+
+
 }

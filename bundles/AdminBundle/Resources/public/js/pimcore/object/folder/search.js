@@ -211,7 +211,7 @@ pimcore.object.search = Class.create(pimcore.object.helpers.gridTabAbstract, {
         gridHelper.enableEditor = true;
         gridHelper.limit = itemsPerPage;
 
-
+        var enableLocking = klass.get("enableLocking");
         var propertyVisibility = klass.get("propertyVisibility");
 
         var existingFilters;
@@ -344,6 +344,7 @@ pimcore.object.search = Class.create(pimcore.object.helpers.gridTabAbstract, {
             columns: gridColumns,
             columnLines: true,
             stripeRows: true,
+            enableLocking: enableLocking,
             bodyCls: "pimcore_editable_grid",
             border: true,
             selModel: gridHelper.getSelectionColumn(),

@@ -804,6 +804,13 @@ pimcore.object.classes.klass = Class.create({
                 },
                 {
                     xtype: "checkbox",
+                    fieldLabel: 'Enable locking',
+                    name: "enableLocking",
+                    style: 'margin: 0',
+                    checked: this.data.enableLocking
+                },
+                {
+                    xtype: "checkbox",
                     fieldLabel: t("encrypt_data"),
                     name: "encryption",
                     style: 'margin: 0',
